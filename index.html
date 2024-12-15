@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 News of the Day</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    #news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .news-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .news-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .news-card h2 {
+      font-size: 1.2rem;
+      margin: 0.5rem;
+    }
+    .news-card p {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+    .news-card a {
+      display: block;
+      margin: 0.5rem;
+      color: blue;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top 10 News of the Day</h1>
+  </header>
+  <main id="news-container">
+    <!-- News articles will be dynamically inserted here -->
+  </main>
+  <footer>
+    <p>Powered by NewsAPI</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
